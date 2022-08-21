@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://JIAHAO814:814410Pjh@cluster0.gmcslkr.mongodb.net/PetsListretryWrites=true&w=majority"
+const uri = "mongodb+srv://JIAHAO814:814410Pjh@cluster0.gmcslkr.mongodb.net/PetsList?retryWrites=true&w=majority"
 const client = new MongoClient(uri, { useNewUrlParser: true});
 
 const cardList = [
